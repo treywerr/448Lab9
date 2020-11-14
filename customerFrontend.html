@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Web Store</title>
+		<script type="text/javascript"
+			src="formChecker.js">
+		</script>
+		<link href="style.css"
+			rel="stylesheet"
+			type="text/css/">
+	</head>
+
+	<body>
+		<form onsumbit="return checkForms()" action="customerBackend.php" method="post">
+			Apples ($1.50 apiece):
+			<input type="text" id="apple" name="apple"><br>
+			Bananas ($3.75 apiece):
+			<input type="text" id="banana" name="banana"><br>
+			Oranges ($2.00 apiece):
+			<input type="text" id="orange" name="orange"><br>
+			<input type="submit">
+		</form>
+	</body>
+</html>
