@@ -15,6 +15,9 @@ if ($shipping == "Overnight") {
 } else if ($shipping == "3-day") {
 	$shippingCost = 5;
 }
+$totalCost = $appleCost+$bananaCost+$orangeCost+$shippingCost;
+
+echo '<link href="style.css" rel="stylesheet" type="text/css"/>'; 
 
 echo "<h2>Welcome " . $user . "<h2>";
 echo "Your password is " . $pass . "<br>";
@@ -24,6 +27,6 @@ echo "<tr><th>Apples</th><td>" . $apples . "</td><td>$1.50</td><td>$" . $apples*
 echo "<tr><th>Bananas</th><td>" . $bananas . "</td><td>$3.75</td><td>$" . $bananas*3.75 . "</td></tr>";
 echo "<tr><th>Oranges</th><td>" . $oranges . "</td><td>$2.00</td><td>$" . $oranges*2 . "</td></tr>";
 echo "<tr><th>Shipping</th><td>" . $shipping . "</td><td></td><td>$" . $shippingCost . "</td></tr>";
-echo "<tr><td></td><td></td><th>Total Cost</th><th>$" . $appleCost+$bananaCost+$orangeCost+$shippingCost . "</th></tr></table>";
+echo "<tr><td></td><td></td><th>Total Cost</th><th>$" . $totalCost . "</th></tr></table>";
 
 ?>
