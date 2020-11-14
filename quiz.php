@@ -41,3 +41,4 @@ if ($q5 == "5") {
 echo "Total correct: " . $score;
 $percent = ($score/5)*100;
 echo "<br>" . $percent . "%";
+?>
