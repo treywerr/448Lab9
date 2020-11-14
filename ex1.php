@@ -15,4 +15,5 @@
 		}
 		echo "</tr>"
 	}
+	echo "</table>";
 ?>
