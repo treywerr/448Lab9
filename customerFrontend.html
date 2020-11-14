@@ -12,13 +12,20 @@
 	</head>
 
 	<body>
-		<form onsumbit="return checkForms()" action="customerBackend.php" method="post">
-			Apples ($1.50 apiece):
-			<input type="text" id="apple" name="apple"><br>
-			Bananas ($3.75 apiece):
-			<input type="text" id="banana" name="banana"><br>
-			Oranges ($2.00 apiece):
-			<input type="text" id="orange" name="orange"><br>
+		<form method="post" action="customerBackend.php" onsubmit="return checkForms()">
+			Apples ($1.50 apiece): <input type="text" id="apple" name="apple"><br>
+			Bananas ($3.75 apiece):	<input type="text" id="banana" name="banana"><br>
+			Oranges ($2.00 apiece): <input type="text" id="orange" name="orange"><br>
+			Select shipping method:<br>
+			<input type="radio" id="7d" name="shipping" value="7d">
+			<label for="7d">Free 7-day shipping</label><br>
+			<input type="radio" id="overnight" name="shipping" value="overnight">
+			<label for="overnight">$50.00 overnight shipping</label><br>
+			<input type="radio" id="3d" name="shipping" value="3d">
+			<label for="3d">$5.00 three day shipping</label><br>
+			<br>
+			Username: <input type="text" id="username" name="username" placeholder="name@domain.com"><br>
+			Password: <input type="text" id="password" name="password"><br>
 			<input type="submit">
 		</form>
 	</body>
