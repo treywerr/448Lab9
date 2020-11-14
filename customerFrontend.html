@@ -8,7 +8,7 @@
 		</script>
 		<link href="style.css"
 			rel="stylesheet"
-			type="text/css/">
+			type="text/css"/>
 	</head>
 
 	<body>
@@ -27,6 +27,15 @@
 			Username: <input type="text" id="username" name="username" placeholder="name@domain.com"><br>
 			Password: <input type="text" id="password" name="password"><br>
 			<input type="submit">
+			<br>
 		</form>
+		<a href="customerFrontend.html">Reset</a>
+		<br><table>
+		<tr><th></th><th>Quantity</th><th>Cost Per Item</th><th>Subtotal</th></tr>
+		<tr><th>Apples</th><td>" . $apples . "</td><td>$1.50</td><td>$" . $apples*1.5 . "</td></tr>
+		<tr><th>Bananas</th><td>" . $bananas . "</td><td>$3.75</td><td>$" . $bananas*3.75 . "</td></tr>
+		<tr><th>Oranges</th><td>" . $oranges . "</td><td>$2.00</td><td>$" . $oranges*2 . "</td></tr>
+		<tr><th>Shipping</th><td>" . $shipping . "</td><td></td><td>$" . $shippingCost . "</td></tr>
+		<tr><td></td><td></td><th>Total Cost</th><th>$" . $appleCost+$bananaCost+$orangeCost+$shippingCost . "</th></tr></table>
 	</body>
 </html>
